@@ -12,5 +12,10 @@ export const Container = styled.div`
 
     > p {
         color: ${( { theme }) => theme.COLORS.GRAY_300};
+        overflow: hidden; // Removendo barra de rolagem
+        text-overflow: ellipsis; // Adicionando "..." ao final
+        display: -webkit-box;
+        -webkit-line-clamp: 2; // Quantidade de linhas
+        -webkit-box-orient: vertical; 
     }
 `

@@ -12,9 +12,10 @@ export const Container = styled.div`
         align-items: center;
 
         .back {
+            display: flex;
+            align-items: center;
             color:${({theme}) => theme.COLORS.PINK} ;
             margin-left: 14.4rem;
-            height:40px;
         }
     }
 `
@@ -32,9 +33,9 @@ export const Avatar = styled.div`
     }
 
     > label {
-        position: absolute;
-        bottom: 1rem;
-        right: 60rem;
+        position: relative;
+        top: 13rem;
+        right: 4.5rem;
 
         width: 48px;
         height: 48px;
@@ -47,7 +48,7 @@ export const Avatar = styled.div`
         justify-content: center;
         
 
-        input {
+        #avatar-input {
             display: none;
         }
 

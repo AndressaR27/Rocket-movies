@@ -27,4 +27,13 @@ export const Container = styled.div`
         }
     }
 
+    > p {
+        margin-top: 3rem;
+        color: ${({ theme })=> theme.COLORS.GRAY_300};
+    }
+`
+
+export const ContainerDate = styled.div`
+    display: flex;
+    gap: 15px;
 `
